@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>select 태그 예제</title>
+</head>
+<body>
+
+<form>
+	<!-- 사용자가 입력하는 태그 : select tag -->
+	<select name="menu1">
+		<option>김밥</option>
+		<option>떡볶이</option>
+		<option>순대</option>
+		<option>어묵</option>
+	</select>
+	
+	<select name="menu2" multiple="multiple">
+		<option>김밥</option>
+		<option>떡볶이</option>
+		<option>순대</option>
+		<option>어묵</option>
+	</select>
+	
+	<select name="menu3">
+		<optgroup label="분식">
+			<option>김밥</option>
+			<option>떡볶이</option>
+			<option>순대</option>
+			<option>어묵</option>
+		</optgroup>
+		<optgroup label="중식">
+			<option>짜장면</option>
+			<option>짬뽕</option>
+			<option>탕수육</option>
+			<option>울면</option>
+		</optgroup>
+	</select>
+	
+	<!-- input > submit(버튼)
+		 form 태그 하위에 존재하는 버튼, input태그의 값을 외부로 전송.
+		 submit 버튼 클릭시, form태그에 onsubmit 이벤트가 발생함. -->
+	<input type="submit" value="전송">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>입력을 받을 수 있는 태그 : input tag</title>
+</head>
+<body>
+
+<form>
+	<!--  사용자가 입력하는 태그 : input tag
+		- text : 한줄 에디터 (id입력)
+		- password : 입력하면 보이지않아 (password입력)
+		- file : file선택 업로드용
+		- checkbox : 다중 선택이 가능
+		- radio : 그룹에서 한 개만 선택 가능 (name이 같아야 한 그룹)
+	-->
+	<input type="text" name="text" value="text"><br>
+	<input type="password" name="password" value="password"><br>
+	<input type="file" name="file" value="file"><br>
+	<input type="checkbox" name="checkbox" value="1">checkbox1<br>
+	<input type="checkbox" name="checkbox" value="2">checkbox2<br>
+	<input type="radio" name="radio" value="1">radio1<br>
+	<input type="radio" name="radio" value="2">radio2<br>
+	
+	<!-- 보이지 않는 입력 태그 : input tag -->
+	<input type="hidden" name="hidden" value="hidden"><br>
+	
+	<!--  버튼
+		- button : onclick 이벤트로 기능을 구현 (버튼이 눌리면 설정대로 반응해)
+		- reset : 처음 화면으로 초기화
+		- submit : form 태그 하위에 존재하는 버튼, input태그의 값을 외부로 전송.
+				   submit 버튼 클릭시, form태그에 onsubmit 이벤트가 발생함.
+	-->
+	<input type="button" value="button" onclick="alert('botton 클릭')"><br>
+	<input type="reset" value="reset"><br>
+	<input type="submit" value="submit"><br>
+</form>
+
+</body>
+</html>
